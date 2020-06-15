@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Video Player</title>
+  </head>
+  <body>
+    <h1>Custom Video Player</h1>
+
+    <video class="video" id="video" src="video/test.mp4"></video>
+
+    <div class="control">
+      <button id="play" class="play">
+        <i class="fa fa-youtube-play" aria-hidden="true"></i>
+      </button>
+      <button id="pause" class="pause">
+        <i class="fa fa-pause" aria-hidden="true"></i>
+      </button>
+      <input
+        id="bar"
+        type="range"
+        name="range"
+        id="range"
+        min="0"
+        max="100"
+        step="0.1"
+      />
+      <span id="timeStamp" class="timeStamp">00:00</span>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

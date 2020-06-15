@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: gray;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+}
+.video {
+  cursor: pointer;
+  width: 500px;
+}
+
+@media (max-width: 800px) {
+  .video {
+    width: 90%;
+  }
+}
+
+.control {
+  background: #333;
+  color: #fff;
+  width: 500px;
+}
+.control input {
+  width: 420px;
+}
